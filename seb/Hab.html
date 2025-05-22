@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Seba 💖</title>
+
+  <!-- Fonts and Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+body 
+h1#surprise-text {
+  font-size: 5em;
+  color: #d63384;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.9; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+    .section p, .section h2, .section h3, .section h1 {
+  text-align: center;       /* Center text horizontally */
+  font-size: 2rem;        /* Larger font size for readability */
+  margin: 20px auto;        /* Add vertical spacing */
+  max-width: 90%;           /* Limit width for better appearance */
+  line-height: 1.4;         /* Better line spacing */
+}
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Dancing Script', cursive;
+      background: #fff0f5;
+      text-align: center;
+    }
+
+    h1, h2 {
+      font-family: 'Dancing Script', cursive;
+      color: #c2185b;
+      margin: 20px 0;
+    }
+
+    .section {
+      display: none;
+      padding: 50px 20px;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .active { display: block; }
+
+    button {
+      margin: 10px;
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background: #c2185b;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-buttons { position: sticky; top: 0; background: #ffe4ec; padding: 10px; z-index: 100; }
+
+    .slideshow img {
+      width: 250px;
+      height: auto;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+
+    .surprise h1 {
+  font-size: 50rem;                  /* Change this to increase/decrease size */
+  color: white;                     /* Change text color */
+  position: absolute;
+  top: 50%;                         /* Adjust vertical position */
+  left: 50%;                        /* Adjust horizontal position */
+  transform: translate(-50%, -50%); /* Centering */
+  text-shadow: 3px 3px 10px #ff4081; /* Glow effect */
+  z-index: 2;
+  white-space: nowrap;
+  font-family: 'Dancing Script', cursive; /* Add this line to customize font */
+}
+
+
+    #tsparticles-surprise, #tsparticles-forgiveness {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .forgive-buttons button {
+      padding: 15px 30px;
+      font-size: 20px;
+    }
+
+    .yes-btn { background-color: #4caf50; }
+    .no-btn { background-color: #e53935; }
+
+    #thanksMessage {
+      display: none;
+      font-size: 2rem;
+      color: #4caf50;
+      margin-top: 30px;
+    }
+
+    iframe.music { display: none; }
+  </style>
+</head>
+<body>
+
+<!-- Background Music -->
+<iframe class="music" width="0" height="0"
+  src="https://www.youtube.com/embed/fJ0o3LHOZPY?autoplay=1&loop=1&playlist=fJ0o3LHOZPY"></iframe>
+
+<!-- Navigation Buttons -->
+<div class="nav-buttons">
+  <button onclick="showSection('intro')">Intro</button>
+  <button onclick="showSection('apology')">Apology</button>
+  <button onclick="showSection('surprise')">Surprise</button>
+  <button onclick="showSection('forgiveness')">Forgiveness</button>
+</div>
+
+<!-- Sections -->
+
+<div id="intro" class="section active">
+  <h1>To My Seba 💌</h1>
+  <p>This entire website is for you — a small way to show how sorry I am and how much you mean to me. I hope it makes you smile❤️❤️<br><br>
+This is not just a website — it’s a heartfelt journey carved in code, a digital garden where every petal whispers “I’m sorry, I love you❤️❤️”<br><br>
+    Through every page, every word, I’ve tried to earn your forgiveness — and your heart, once more❤️❤️<br><br>
+    This is for you, Seba — the love of my life, my safe place, my forever. Thank you for clicking. I hope this brings even a little smile to your beautiful heart❤️❤️ </p>
+</div>
+
+<div id="apology" class="section">
+  <h2>I'm Sorry</h2>
+  <p>I know I hurt you — and not just a little. I made you feel sad, distant, even unloved. And the truth is, there's no excuse for that. It breaks my heart knowing I caused pain to the one person who means the world to me.
+    <br><br>
+    I’ve been thinking a lot about everything — what I said, and how it made you feel. And I want you to know this isn’t just me saying sorry. This is me understanding, learning, and promising to be better. Because you deserve better — always.
+    <br><br>
+    I love you. Deeply. Honestly. Unconditionally.
+    <br><br>
+    Please forgive me, my love.<br><br> ❤️❤️❤️❤️</p>
+</div>
+
+<div id="surprise" class="section">
+  <div id="tsparticles-surprise"></div>
+  <h1 id="surprise-text">💖💖HATGAWEZEKKK💖💖<br><br>💖💖HATGAWEZEKKK💖💖<br><br>💖💖HATGAWEZEKKK💖💖<br><br>💖💖HATGAWEZEKKK💖💖<br><br></h1>
+</div>
+
+<div id="forgiveness" class="section">
+  <div id="tsparticles-forgiveness"></div>
+  <h2>Do you forgive me?</h2>
+  <div class="forgive-buttons" style="position: relative; z-index: 2;">
+    <button class="yes-btn" onclick="showThanks()">Yes</button>
+    <button class="no-btn" onclick="respondNo(this)">No</button>
+  </div>
+  <div id="thanksMessage">Thank youu for your forgiveness sweetheart 💖</div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+<script>
+  const sections = document.querySelectorAll(".section");
+  function showSection(id) {
+    sections.forEach(sec => sec.classList.remove("active"));
+    document.getElementById(id).classList.add("active");
+  }
+
+  // Particle Effects
+  tsParticles.load("tsparticles-surprise", {
+    fullScreen: { enable: false },
+    particles: {
+      number: { value: 80 },
+      color: { value: ["#ff4081", "#ffc0cb", "#fff"] },
+      shape: { type: ["circle", "star"] },
+      opacity: { value: 0.7 },
+      size: { value: { min: 2, max: 6 } },
+      move: { enable: true, speed: 2, direction: "top", outModes: { default: "out" } }
+    }
+  });
+
+  let noClicks = 0;
+  const noMessages = ["Try again?", "Think wisely ❤️", "Really?? 😥", "Please reconsider 💕",
+  "I believe in us 💖", "Hope grows with patience 🌸", "Come on Seba 😢"];
+  function respondNo(btn) {
+    noClicks++;
+    btn.innerText = noMessages[noClicks % noMessages.length];
+    btn.style.transform = `scale(${1 - noClicks * 0.1})`;
+    document.querySelector('.yes-btn').style.transform = `scale(${1 + noClicks * 0.1})`;
+  }
+
+  function showThanks() {
+    document.getElementById("thanksMessage").style.display = "block";
+    tsParticles.load("tsparticles-forgiveness", {
+      fullScreen: { enable: false },
+      particles: {
+        number: { value: 100 },
+        color: { value: ["#00e676", "#ff4081", "#fff"] },
+        shape: { type: ["circle", "star"] },
+        opacity: { value: 0.7 },
+        size: { value: { min: 2, max: 6 } },
+        move: { enable: true, speed: 3, direction: "none", outModes: { default: "out" } }
+      }
+    });
+  }
+</script>
+</body>
+</html>
